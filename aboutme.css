@@ -1,0 +1,128 @@
+/*change the boxing of the page here*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*change the background color of the page here*/
+
+body {
+    background-image: url('images/oceanview.jpg') !important;
+    background-size: cover;
+    background-position: top;  
+    background-repeat: no-repeat; 
+    
+}
+
+/*change the styling of the header here*/
+header {
+    padding: 20px;
+    font-family: 'Lobster', cursive;
+    background-color: #FFFFFF;
+    color: #f38e8e;
+}
+
+/*change the display of the header here*/
+header h1{
+    display: inline-block;
+    font-size: 24px;
+}
+
+/*change the styling of the title of the <header><nav> </nav></header> here*/
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 16px;
+}
+
+/*change the styling of the list of the <header><nav> </nav></header> here*/
+header nav ul {
+    list-style-type: none;
+    margin: -10px;
+}
+
+/*change the styling of the list within the <header><nav> </nav></header> here*/
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/*change the styling of the <header></header> links here*/
+a {
+    color: #f09292;
+    text-decoration: none;
+}
+.nav-bar-intro a:hover {
+    background-color: #f38e8e;
+    color: snow;
+}
+
+/*change the styling of the paragraph tag within the <section class='content'></section>*/
+p {
+    font-size: 16px;
+}
+
+/*change the styling of the background image within the <div class='hero'></div> here*/
+.intel {
+    height: 300px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-image: url('images/a-little-about-me.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/*position of the images within the <section class='content'><section> here*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+/*change the contents of the elements within the <section class='content'><section> here*/
+.content {
+    width: 50%;
+    display: inline-block;
+    margin-left: 20px;
+}
+/*change the styling within the <section class='contents'></section>*/
+#all-about-me {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 370px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: whitesmoke;
+    color: #AD6767;
+    border-radius: 30px;
+}
+/*change the styling within the <section class='contents'></section>*/
+#all-about-me img {
+    border-radius: 30px;
+    max-height: 200px;
+    box-shadow: 20px 20px 20px rgba(127, 107, 236, 0.19), 0 6px 6px rgba(192, 174, 114, 0.23);
+}
+/*change the styling within the <footer></footer> here*/
+.footer {
+    padding: 30px;
+    width: 100%;
+    clear: both;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color: thistle;
+    margin-left: 300px;
+}
+
+/*change the styling within the <footer></footer> here*/
+.footer span {
+    font-size: 20px;
+    color: thistle;
+}
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .nav-bar-intro a {
+      float: none;
+      width: 100%;
+    }
+} 
