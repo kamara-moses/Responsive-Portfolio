@@ -1,0 +1,94 @@
+/* change styling for the whole html here */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* change the background color for the html file here */
+body {
+    background-image: linear-gradient(to right, rgb(241, 240, 243) 0%, rgba(6, 177, 230, 0.877) 100%) !important; 
+}
+
+/* change the styling of the header here */
+header {
+    padding: 20px;
+    font-family: 'Lobster', cursive;
+    background-image: linear-gradient(to left, rgb(241, 240, 243) 0%, rgba(6, 177, 230, 0.877) 100%);
+    color: snow;
+}
+
+/* change the display of the header here */
+header h1{
+    display: inline-block;
+    font-size: 24px;
+}
+
+/* change the styling of the title of the <header><nav> </nav></header> here */
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 16px;
+}
+
+/* change the styling of the list of the <header><nav> </nav></header> here */
+header nav ul {
+    list-style-type: none;
+    margin: -10px;
+}
+
+/* change the styling of the list within the <header><nav> </nav></header> here */
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* change the styling of the <header></header> links here */
+a {
+    color: rgba(6, 177, 230, 0.877);
+    text-decoration: none;
+}
+
+/* change the hover property element here */
+.nav-bar-intro a:hover {
+    background-color: snow;
+    color: rgba(6, 177, 230, 0.877);
+}
+
+/* change the thank you content within the <section></section> here */
+.thank-you {
+    text-align: center;
+    padding: 60px;
+    font-family: sans-serif;
+    font-weight: 200px;
+}
+
+/* change the image properties here within the <section></section> here */
+.thx {
+    border-radius: 300px;
+    text-decoration-color: skyblue;
+    background-color: skyblue;
+}
+
+/* change the styling for the <em class='asap'></em> within the <section></section> here */
+.asap {
+    color: white;
+    font-weight: bold;
+}
+/* change the styling within the <footer></footer> here */
+.footer {
+    padding: 30px;
+    width: 100%;
+    clear: both;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color: snow;
+    background: -webkit-linear-gradient(left, rgb(241, 240, 243) 0%, rgba(6, 177, 230, 0.877) 100%)
+}
+
+/* change the styling within the <footer></footer> here */
+.footer span {
+    font-size: 20px;
+}

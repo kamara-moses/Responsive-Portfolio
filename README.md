@@ -17,5 +17,7 @@ The nav-bar has functional links to the other files on the repository
 The forms have required attribute added to them so users have to input information before submitting the form
 Added a sticky footer at the bottom with my name as the creator/author of the page
 
+The fourth file that was just added was an extension of the contact.html. When the submit button is click, a thank you message will open within the same window. This will let the user know that there submission was processed and sent.
+
 This files will eventually be utilized for my personal while job hunting and other aspects of my career.
 Tried to maintain consistency among the three sites and made sure it responsive.

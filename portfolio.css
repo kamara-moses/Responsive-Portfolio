@@ -1,11 +1,11 @@
-/*change the boxing of the page here*/
+/* change the styling of the html here */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-/*change the background color of the page here*/
+/* change the background color of the page here */
 
 body {
     background-image: url('images/bg-01.jpg') !important;
@@ -15,7 +15,7 @@ body {
     
 }
 
-/*change the styling of the header here*/
+/* change the styling of the header here */
 header {
     padding: 20px;
     font-family: 'Lobster', cursive;
@@ -23,13 +23,13 @@ header {
     color: #b8b8b8;
 }
 
-/*change the display of the header here*/
+/* change the display of the header here */
 header h1{
     display: inline-block;
     font-size: 24px;
 }
 
-/*change the styling of the title of the <header><nav> </nav></header> here*/
+/* change the styling of the title of the <header><nav> </nav></header> here */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -38,27 +38,30 @@ header nav {
     font-size: 16px;
 }
 
-/*change the styling of the list of the <header><nav> </nav></header> here*/
+/* change the styling of the list of the <header><nav> </nav></header> here */
 header nav ul {
     list-style-type: none;
     margin: -10px;
 }
 
-/*change the styling of the list within the <header><nav> </nav></header> here*/
+/* change the styling of the list within the <header><nav> </nav></header> here */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-/*change the styling of the <header></header> links here*/
+/* change the styling of the <header></header> links here */
 a {
     color: #b8b8b8; 
     text-decoration: none;
 }
+
+/* change the styling of the hover property within the <header><nav></nav></header> here */
 .nav-bar-intro a:hover {
     background-color: #000000;
     color: snow;
 }
+
 form {
     background-color: white;
     width: 565px;
@@ -68,6 +71,7 @@ form {
     margin: 20px;
     border-radius: 30px !important;
 } 
+
 .port-folio {
     font-family: sans-serif;
     font-size: 24px;
@@ -77,39 +81,46 @@ form {
     background-clip: text;
     color: transparent;
 }
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
+
 .wrapper img{
     width: 225px;
     height: 200px;
     border-radius: 30px;
 }
+
 .dice-game {
     grid-column: 1;
     grid-row: 1
 }
+
 .witcher { 
     grid-column: 2;
     grid-row: 1;
 }
+
 .ACEs {
     grid-column: 1;
     grid-row: 2;
 }
+
 .widgets {
     grid-column: 2;
     grid-row: 2;
 }
+
 .rockpaperscissors {
     grid-column: 1;
     grid-row: 3;
 }
 
-/*change the styling within the <footer></footer> here*/
+/* change the styling within the <footer></footer> here */
 .footer {
     padding: 30px;
     width: 100%;
@@ -120,7 +131,7 @@ form {
     background: whitesmoke;
 }
 
-/*change the styling within the <footer></footer> here*/
+/* change the styling within the <footer></footer> here */
 .footer span {
     font-size: 20px;
 }
