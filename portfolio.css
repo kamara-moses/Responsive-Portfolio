@@ -6,7 +6,6 @@
 }
 
 /* change the background color of the page here */
-
 body {
     background-image: url('images/bg-01.jpg') !important;
     background-size: cover;
@@ -17,10 +16,14 @@ body {
 
 /* change the styling of the header here */
 header {
-    padding: 20px;
+    padding: 15px;
     font-family: 'Lobster', cursive;
     background-color: whitesmoke;
     color: #b8b8b8;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 /* change the display of the header here */
@@ -31,7 +34,7 @@ header h1{
 
 /* change the styling of the title of the <header><nav> </nav></header> here */
 header nav {
-    padding-top: 15px;
+    padding-top: 0px;
     margin-right: 20px;
     float: right;
     font-family: 'Kaushan Script', cursive;
@@ -41,7 +44,6 @@ header nav {
 /* change the styling of the list of the <header><nav> </nav></header> here */
 header nav ul {
     list-style-type: none;
-    margin: -10px;
 }
 
 /* change the styling of the list within the <header><nav> </nav></header> here */
@@ -62,16 +64,18 @@ a {
     color: snow;
 }
 
-form {
+/* change styling of the container element here */
+.container {
     background-color: white;
-    width: 565px;
-    height: 800px;
-    border: 0px;
-    padding: 50px;
-    margin: 20px;
+    vertical-align: middle;
+    width: 500px;
+    height: 690px;
+    margin-top: 90px;
+    margin-bottom: 90px;
     border-radius: 30px !important;
 } 
 
+/* change the styling of the port-folio class here */
 .port-folio {
     font-family: sans-serif;
     font-size: 24px;
@@ -82,39 +86,48 @@ form {
     color: transparent;
 }
 
+/* change the styling for the wrapper class here */
 .wrapper {
     display: grid;
+    text-align: center;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
 
+/* change the styling of the images in the wrapper class here */
 .wrapper img{
-    width: 225px;
-    height: 200px;
-    border-radius: 30px;
+    width: 220px;
+    height: 175px;
+    vertical-align: middle;
+    border-radius: 60px;
 }
 
+/* Change the position of the dice-game class within the container */
 .dice-game {
     grid-column: 1;
     grid-row: 1
 }
 
+/* Change the position of the dice-game class within the container */
 .witcher { 
     grid-column: 2;
     grid-row: 1;
 }
 
+/* Change the position of the dice-game class within the container */
 .ACEs {
     grid-column: 1;
     grid-row: 2;
 }
 
+/* Change the position of the dice-game class within the container */
 .widgets {
     grid-column: 2;
     grid-row: 2;
 }
 
+/* Change the position of the dice-game class within the container */
 .rockpaperscissors {
     grid-column: 1;
     grid-row: 3;
@@ -122,9 +135,10 @@ form {
 
 /* change the styling within the <footer></footer> here */
 .footer {
-    padding: 30px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    clear: both;
     font-family: 'Lobster', cursive;
     text-align: center;
     color: #b8b8b8;

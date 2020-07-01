@@ -6,7 +6,6 @@
 }
 
 /*change the background color of the page here*/
-
 body {
     background-image: url('images/oceanview.jpg') !important;
     background-size: cover;
@@ -55,6 +54,8 @@ a {
     color: #f09292;
     text-decoration: none;
 }
+
+/* change the hover property of the navigation links here */
 .nav-bar-intro a:hover {
     background-color: #f38e8e;
     color: snow;
@@ -105,13 +106,14 @@ p {
 }
 /*change the styling within the <footer></footer> here*/
 .footer {
-    padding: 30px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
     clear: both;
     font-family: 'Lobster', cursive;
     text-align: center;
     color: thistle;
-    margin-left: 300px;
 }
 
 /*change the styling within the <footer></footer> here*/

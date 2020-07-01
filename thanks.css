@@ -12,6 +12,10 @@ body {
 
 /* change the styling of the header here */
 header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     padding: 20px;
     font-family: 'Lobster', cursive;
     background-image: linear-gradient(to left, rgb(241, 240, 243) 0%, rgba(6, 177, 230, 0.877) 100%);
@@ -59,6 +63,7 @@ a {
 
 /* change the thank you content within the <section></section> here */
 .thank-you {
+    margin-top: 75px;
     text-align: center;
     padding: 60px;
     font-family: sans-serif;
@@ -79,6 +84,9 @@ a {
 }
 /* change the styling within the <footer></footer> here */
 .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     padding: 30px;
     width: 100%;
     clear: both;
