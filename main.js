@@ -1,14 +1,14 @@
-var submitEl = document.querySelector('#submit');
-var nameInput = document.querySelector('#name');
-var emailInput = document.querySelector('#email');
-var submissionResponseEl = document.querySelector('.response');
+var submit = document.querySelector('#submit');
+var nameInput = document.querySelector('#nameInput');
+var emailInput = document.querySelector('#emailInput');
+var submissionResponse = document.querySelector('.response');
+var response = 'Thank you for your submission ' + nameInput + '! We will reach out to you at ' + emailInput + '.';
 
-  submitEl.addEventListener('click', function(event) {
+submit.addEventListener('click', function () {
      event.preventDefault();
+         console.log('click');
+        // var newName = document.querySelector('#nameInput');
+         //localStorage.setItem('name', nameInput)
+});
 
-  console.log(event);
-  
-  var response = "Thank you for your submission " + nameInput.value + "! We will reach out to you at " + emailInput.value + ".";
-  submissionResponseEl.textContent = response;
-  });
  
