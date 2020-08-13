@@ -154,6 +154,15 @@ p {
     margin-bottom: 50px;
     height: auto;
 }
+.col-md-4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgba(6, 177, 230, 0.877);
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 500px;
+}
 
 /* change the styling within the <section class='contents'></section> */
 .col-md-6 img {
@@ -277,47 +286,30 @@ p {
     background-color: white;
 }
 
-/* change the width of the form input boxes here */
-.form-group {
-    width: 530px;
-}
-
 /* change the styling within the <div class='button-element'></div> here */
 #submit {
-    box-sizing: border-box;
-    height: 56px;
-    width: 318.656px;
-    margin: 160px;
-    margin-left: 100px;
     cursor: pointer;
-    background: -webkit-linear-gradient(left, rgb(241, 240, 243) 0%, rgba(6, 177, 230, 0.877) 100%);
-    border: none;
+    width: 50%;
     text-align: center;
-    font-family: "Open Sans";
     font-size: 18px;
-    font-weight: 600;
+    background: -webkit-linear-gradient(left, rgb(241, 240, 243) 0%, rgba(6, 177, 230, 0.877) 100%);
+    margin: 20px 0 0 110px;
     color: rgb(255, 255, 255);
-    line-height: 1;
-    border-radius: 30px;
+}
+#message {
+    padding: 0 0 100px 0;
+    border-radius: 10px;
 }
 
 /* change the styling within the <textarea></textarea> here */
-#message {
-    position: absolute;
-    box-sizing: border-box;
-    padding: 0 0 120px 0;
-    width: 500px;
-    border: 1px solid rgb(227, 227, 227);
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    border-color: skyblue;
-    font-family: 'Open Sans';
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-    line-height: 1;
-    cursor: text;
-    white-space: pre-wrap;
-    overflow-wrap: break-word;
-    letter-spacing: normal;
-    text-indent: 0px;
-}
+/*@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }*/

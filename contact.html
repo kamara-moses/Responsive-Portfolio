@@ -31,28 +31,23 @@
 
     <!-----------Content----------->
     <section>
-        <div class='container'>
-            <div class='row'>
-                <div class='col'>
-                    <h2>
-                        <span class='color-text'>Contact</span>
-                    </h2>
-                    <hr color='lightblue'>
-                </div>
-                <div>
-                    <form action='submit-form.php' name='myForm' method='post' target='_blank'>
-                        <div class='form-group col-lg-12'>
-                            <label for='formgroupNameInput'>Name</label>
-                            <input type='text' class='form-control' id='nameInput' placeholder='eg. John Jones'
-                                required>
-                            <label for='formGroupEmailInput'>Email</label>
-                            <input type='text' class='form-control' id='emailInput' placeholder='name@gmail.com'
-                                required>
-                            <label for='text'>Message</label>
-                            <textarea name='message' class='form-control' id=message></textarea>
-                            <button id='submit'>Submit</button>
-                    </form>
-                </div>
+        <div class='row d-flex justify-content-center'>
+            <div class='col-md-4'>
+                <h2>
+                    <span class='color-text'>Contact</span>
+                </h2>
+                <hr color='lightblue'>
+                <form action='submit-form.php' name='myForm' method='post' target='_blank'>
+                    <div class='form-group col-lg-12'>
+                        <label for='formgroupNameInput'>Name</label>
+                        <input type='text' class='form-control' id='nameInput' placeholder='Enter your Name' required>
+                        <label for='formGroupEmailInput'>Email</label>
+                        <input type='email' class='form-control' id='emailInput' placeholder='Enter your Email'
+                            required>
+                        <label for='text'>Message</label>
+                        <textarea type='textarea' name='message' class='form-control' id=message></textarea>
+                        <button id='submit' class='form-control'>Submit</button>
+                </form>
             </div>
         </div>
     </section>
