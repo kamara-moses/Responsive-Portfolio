@@ -1,276 +1,318 @@
-/* change the boxing of the page here */
-* {
-    box-sizing: border-box;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap' rel='stylesheet'");
+
+/* make sure border & padding are included in total size when w&h are set */
+* { box-sizing: border-box;} 
+
+html, body {
+    height: 100%;
     margin: 0;
 }
 
-/* change the background color of the page here */
-body{
-    background-image: url('images/oceanview.jpg') !important;
-    background-size: cover;
-    background-position: top;  
-    background-repeat: no-repeat; 
-    
+body {
+    background-color: #ebf3f7;
+    font-size: 18px;
+    line-height: 34px;
+    font-family: 'Passion One', 'Georgia', Times, 'Times New Roman', serif;
+    color: #6ec7fa;
 }
 
-.portfolio {
-    background-image: url('images/bg-01.jpg') !important;
-}
-
-.contact-page {
-    background-image: url('images/contact-us.jpg') !important;
-}
-
-/* change the styling of the header here */
-header {
-    padding: 20px;
-    font-family: 'Lobster', cursive;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background-image: transparent;
-}
-
-/* change the display of the header here */
-header h1{
-    display: inline-block;
-    font-size: 24px;
-    color: white;
-}
-
-/* change the styling of the title of the <header><nav> </nav></header> here */
-header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 16px;
-}
-
-/* change the styling of the list of the <header><nav> </nav></header> here */
-header nav ul {
-    list-style-type: none;
-    margin: -10px;
-}
-
-/* change the styling of the list within the <header><nav> </nav></header> here */
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-/* change the styling of the <header></header> links here */
-a {
-    color: rgb(243, 234, 233);
-    text-decoration: none;
-}
-
-/* change the hover property of the navigation links here */
-.nav-bar-intro a:hover {
-    color: rgba(214, 240, 248, 0.877);
-}
-
-#inc {
-    color: white;
-}
-
-/* change styling of the container element here */
 .container {
-    background-color: white;
-    vertical-align: middle;
-    border: 0px;
-    width: 540px;
-    height: 550px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 30px !important;
-} 
-
-/* change the styling for the contact h2 here */
-.color-text {
-    font-family: sans-serif;
-    font-size: 24px;
-    background-image: linear-gradient(to left, rgb(241, 240, 243) 0%,  rgba(6, 177, 230, 0.877) 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    width:100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
 }
 
-.multicolortext {
-    font-family: sans-serif;
-    font-size: 24px;
-    background-image: linear-gradient(to left, rgb(241, 240, 243) 0%,  rgba(109, 46, 67, 0.473) 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
+h1, h2, h3, p {
+    margin-bottom: 20px;
 }
 
-/* change the styling of the paragraph tag within the <section class='content'></section> */
-p {
-    font-size: 16px;
-    color:  rgba(109, 46, 67, 0.473);
+p:last-child{
+    margin-bottom: 0;
 }
 
-/* position of the images within the <section class='content'><section> here */
-.float-left {
+h1, h2, h3 {
+    font-family: 'Passion One', 'Georgia', Times, 'Times New Roman', serif;
+    font-weight: 700;
+    color: #59a4eb;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 49px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #163e50;
+}
+
+h2, h3 { 
+    font-size: 22px;
+}
+
+/* header */
+
+#masthead {
+    width: 100%;
+    margin: 0 0 30px;
+    z-index: 99;
+    overflow: auto;
+    position: fixed;
+    background: #fff;
+    border-bottom: 2px solid #163e50;
+}
+
+#logo {
+    width: 350px;
+    height: 90px;
+    float: left;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    line-height: 90px;
+    font-weight: 700;
+    font-size: 50px;
+    text-decoration: none;
+    background: #59a4eb;
+    color: #fff;
+}
+
+nav {
+    float:right;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+nav a{
+    display: inline-block;
+    margin-left: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    line-height: 20px;
+    color: rgb(143, 165, 226);
+    border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+    border-left: 0 none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #470a0a;
+}
+
+/* main */
+
+#main-container {
+    padding-top: 130px;
+    min-height: 100%;
+}
+
+.main-section {
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    margin: 0 40px 40px 0;
+    float: left;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.auth-image { 
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
     float: left;
     margin-right: 25px;
 }
 
-/* change the contents of the elements within the <section class='content'><section> here */
-.row d-flex justify-content-center {
-    width: 60%;
-    display: inline-block;
-}
+/* sidebar */
 
-/* change the styling within the <section class='contents'></section> */
-.col-md-6 {
-    padding: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(255, 255, 255);
-    color: rgba(6, 177, 230, 0.877);
-    border-radius: 30px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    height: auto;
-}
-.col-md-4 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(255, 255, 255);
-    color: rgba(6, 177, 230, 0.877);
-    border-radius: 30px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    height: 500px;
-}
-
-/* change the styling within the <section class='contents'></section> */
-.col-md-6 img {
-    border-radius: 30px;
-    max-height: 200px;
-    box-shadow: 20px 20px 20px rgba(127, 107, 236, 0.19), 0 6px 6px rgba(192, 174, 114, 0.23);
-}
-
-/* change the styling within the <footer></footer> here */
-.footer {
-    position: sticky;
-    left: 0;
-    padding: 15px;
+.sidebar { 
     width: 100%;
+    max-width: 270px;
+    padding: 30px;
+    margin-bottom: 20px;
+    float: left;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.sidebar a:hover img {
+    border: 3px solid #470a0a;
+}
+
+h3, .sidebar, h2 { 
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    border-bottom: 2px solid #eee;
+}
+
+.social {
+    width: 62px;
+    height: 62px;
+    margin-top: 8px;
+    margin-right: px;
+}
+
+.social:last-child { 
+    margin-right: 0;
+}
+
+/* footer */
+
+footer {
     clear: both;
-    font-family: 'Lobster', cursive;
+    font-size: 12px;
     text-align: center;
-    color: white;
-    background: transparent
+    padding: 30px 0;
+    margin-top: -102px;
+    border-top: 8px solid #163e50;
+    background: #59a4eb;
+    color: #470a0a;
 }
 
-/* change the styling within the <footer></footer> here */
-.footer span {
-    font-size: 20px;
+/* portfolio */
+
+.card {
+    width: 274px;
+    overflow: auto;
+    position: relative;
+    float: left;
+    margin: 20px 0 25px;
 }
 
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .nav-bar-intro .nav-name a {
-      float: none;
-      width: 100%;
-    }
-} 
-
-/* change the styling of the port-folio class here */
-.port-folio {
-    font-family: sans-serif;
-    font-size: 24px;
-    background-image: linear-gradient(to left, rgb(241, 240, 243) 0%, rgba(6, 177, 230, 0.877) 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
+.card:nth-child(even){ 
+    margin-right: 40px;
 }
 
-/* change the styling for the wrapper class here */
-.wrapper {
-    display: grid;
-    text-align: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    grid-auto-rows: minmax(100px, auto);
-    margin: 0 20px 0 20px;
-}
-
-/* change the styling of the images in the wrapper class here */
-.wrapper img{
+.card img {
     width: 100%;
-    height: auto;
+    border: 0 none;
+    opacity: .8;
 }
 
-/* Change the position of the dice-game class within the container */
-.card-1 {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-/* Change the position of the dice-game class within the container */
-.card-2 { 
-    grid-column: 2;
-    grid-row: 1;
-}
-
-/* Change the position of the dice-game class within the container */
-.card-3 {
-    grid-column: 3;
-    grid-row: 1;
-}
-
-/* Change the position of the dice-game class within the container */
-.card-4 {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-/* Change the position of the dice-game class within the container */
-.card-5 {
-    grid-column: 2;
-    grid-row: 2;
-}
-/* change the styling for the forms inside the container class here */
-.form-control {
-    border-radius: 30px;
-    border-color: skyblue;
-}
-
-
-#about, #contact, #portfolio {
-    background-color: white;
-}
-
-/* change the styling within the <div class='button-element'></div> here */
-#submit {
-    cursor: pointer;
-    width: 50%;
+.card h3 { 
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    padding: 15px;
+    line-height: 30px;
+    border-bottom: 0;
+    margin-bottom: 0;
     text-align: center;
-    font-size: 18px;
-    background: -webkit-linear-gradient(left, rgb(241, 240, 243) 0%, rgba(6, 177, 230, 0.877) 100%);
-    margin: 20px 0 0 110px;
-    color: rgb(255, 255, 255);
-}
-#message {
-    padding: 0 0 100px 0;
-    border-radius: 10px;
+    font-weight: 300;
+    background: #bc4f5e;
+    color: #fff;
 }
 
-/* change the styling within the <textarea></textarea> here */
-/*@media (min-width: 576px) {
+.form-group {
+}
+
+label, 
+input[type=text],
+input[type=email],
+textarea { 
+    display:block;
+    width: 100%
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+textarea{
+    height: 200px;
+}
+
+input[type=submit] {
+    border: 0 none;
+    font-size: 18px;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: #59a4eb;
+    color: #fff;
+    margin-top: 15px;
+}
+
+
+/* animation */
+@-moz-keyframes portfolioAnim { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes portfolioAnim { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes portfolioAnim { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/* media queries */
+@media screen and (max-width: 980px) {
     .container {
-      max-width: 540px;
+        max-width: 760px;
     }
-  }
-  
-  @media (min-width: 768px) {
+        
+    .main-section {
+        max-width: 450px;
+    }
+
+    .auth-image, .work {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .container {
-      max-width: 720px;
+        max-width: 650px;
     }
-  }*/
+
+    .main-section, .sidebar 
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .auth-image {
+        width: 50%;
+    }
+
+    .sidebar { 
+        margin-bottom: 40px;
+    }
+
+    .work
+    {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #masthead { 
+        position: static;
+    }
+
+    #logo, nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+        white-space: nowrap;
+    }
+
+    nav a {
+        margin: 0;
+        width: 33.33%;
+    }
+
+    #main-container {
+        padding-top: 10px;
+        max-width: 590px;
+    }
+    .auth-image, .work
+    {
+        width: 100%;
+    }
+}

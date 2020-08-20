@@ -1,56 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="main.css" type="text/css" charset="utf-8" />
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='main.css' type='text/css' charset='utf-8' />
     <title>Contact</title>
 </head>
 
 <body class='contact-page'>
-    <!-------------Header/Navigation----------->
-    <header class='header'>
-        <h1 aria-label='Moses Kamara spelled M O S E S  K A M A R A'>Moses Kamara</h1>
-        <nav class='nav-bar-intro'>
-            <ul>
-                <li>
-                    <a href='index.html' alt='Open new browser window to display About Me Page' target='_blank'>About<i
-                            class='fa fa-user-circle'></i></a>
-                </li>
-                <li>
-                    <a href='portfolio.html' alt='Open new browser window to display Portfolio Page'
-                        target='_blank'>Portfolio<i class='fa fa-folder-open'></i></a>
-                </li>
-            </ul>
+    <!----------Header/Navigation------------>
+    <header id='masthead'>
+        <div class='container'>
+            <a href='index.html' id='logo' aria-label='Moses Kamara spelled M O S E S K A M A R A'>Moses Kamara</a>
+        </div>
+        <nav>
+            <a href='index.html'>About<i class='fa fa-user-circle'></i></a>
+            <a href='portfolio.html'>Portfolio<i class='fa fa-folder-open'></i></a>
+            <a href='contact.html'>Contact<i class='fa fa-envelope'></i></a>
         </nav>
     </header>
 
-    <!-----------Content----------->
-    <section>
-        <div class='row d-flex justify-content-center'>
-            <div class='col-md-4'>
-                <h2>
-                    <span class='color-text'>Contact</span>
-                </h2>
-                <hr color='lightblue'>
-                <form action='submit-form.php' name='myForm' method='post' target='_blank'>
-                    <div class='form-group col-lg-12'>
-                        <label for='formgroupNameInput'>Name</label>
-                        <input type='text' class='form-control' id='nameInput' placeholder='Enter your Name' required>
-                        <label for='formGroupEmailInput'>Email</label>
-                        <input type='email' class='form-control' id='emailInput' placeholder='Enter your Email'
-                            required>
-                        <label for='text'>Message</label>
-                        <textarea type='textarea' name='message' class='form-control' id=message></textarea>
-                        <button id='submit' class='form-control'>Submit</button>
-                </form>
+    <div id='main-container' class='container'>
+        <section class='main-section'>
+            <h1>Contact</h1>
+
+            <form id='contact-form'>
+                <label for='contactName'>Name</label>
+                <input type='text' id='contactName' name='contactName' placeholder='John Smith' required='required' />
+
+                <label for='contactEmail'>Email</label>
+                <input type='email' id='contactEmail' name='contactEmail' placeholder='example@gmail.com'
+                    required='required' />
+
+
+                <label for='contactMessage'>Message</label>
+                <textarea id='contactMessage' name='contactMessage' required='required'></textarea>
+
+                <input type='submit' name='Submit' />
+            </form>
+        </section>
+
+        <section class='sidebar'>
+            <div id='connect'>
+                <h2>Connect With Me</h2>
+
+                <a href='https://github.com/kamara-moses' target='_blank'><img
+                        src='images/if_github_square_black_107109.png' class='social' alt='Github' /></a>
+                <a href='https://www.linkedin.com/in/moses-kamara/' target='_blank'><img
+                        src='images/if_linkedin_square_color_107091.png' class='social' alt='LinkedIn' /></a>
+                <a href='https://slack.com/' target='_blank'><img src='images/slack.png' class='social' alt='Slack'></a>
+                <a href='mailto:kamara.moses@yahoo.com' target='_blank'><img src='images/email.png' class='social' alt='Email'></a>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <!-----------Footer----------->
     <footer class='footer'>
